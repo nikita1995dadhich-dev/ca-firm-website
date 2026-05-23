@@ -187,13 +187,13 @@ function Contact() {
                                 </div>
                                 <div className="flex gap-4 mt-8">
                                     
-                                    <a href={dataInfo.facebookLink} className="bg-white-200 text-[#0A3D78]" target="_blank" rel="noopener noreferrer">
+                                    <a href={dataInfo.facebookLink} className="bg-white-200 text-blue-500" target="_blank" rel="noopener noreferrer">
                                         <FaFacebook size={30} />
                                     </a>
                                     <a href={dataInfo.instagramLink} className="bg-white-200 text-pink-700" target="_blank" rel="noopener noreferrer">
                                         <FaInstagram size={30} />
                                     </a>
-                                    <a href={dataInfo.inkedinLink} className="bg-white-200 text-[#0A3D78]" target="_blank" rel="noopener noreferrer">
+                                    <a href={dataInfo.inkedinLink} className="bg-white-200 text-blue-500" target="_blank" rel="noopener noreferrer">
                                         <FaLinkedin size={30} />
                                     </a>
                                 </div>

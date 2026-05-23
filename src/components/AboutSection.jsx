@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { dataInfo } from "../constants/data"
+import { Link } from "react-router-dom"
 
 function AboutSection() {
     return (
@@ -44,15 +45,15 @@ function AboutSection() {
               <div className="flex gap-6 mt-14">
     
                 <button className="bg-[#E58B2A] hover:scale-105 text-[#E5E7EB] px-8 py-4 rounded-2xl shadow-xl transition duration-300">
-                    <a href="/about"> {/*bg-blue-700*/}
+                    <Link to="/about"> {/*bg-blue-700*/}
                         Learn More
-                    </a>
+                    </Link>
                 </button>
     
                 <button className="border border-[#55B848] bg-[#1E6A9C] text-[#E5E7EB] px-8 py-4 rounded-2xl hover:bg-[#E58B2A]  hover:text-white transition duration-300">
-                    <a href="/contact">
+                    <Link to="/contact">
                         Contact Us
-                    </a>
+                    </Link>
                 </button>
     
               </div>

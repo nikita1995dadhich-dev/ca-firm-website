@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 function Vision() {
     return (
@@ -37,9 +38,9 @@ function Vision() {
                 </p>
 
                 <button className="mt-10 bg-[#F37920] text-[#FFFFFF] hover:scale-107 px-10 py-5 rounded-2xl font-semibold shadow-xl transition duration-300">
-                    <a href="/about">
+                    <Link to="/about">
                         Get More About Us
-                    </a>
+                    </Link>
                 </button>
 
                 </motion.div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { FaChartBar, FaRupeeSign, FaFileInvoiceDollar, FaBuilding, FaChartLine, FaBriefcase,  FaCreditCard, FaUserTie, FaBalanceScale, FaRocket,      } from "react-icons/fa";
 import { services } from "../constants/services"
+import { Link } from "react-router-dom"
 
 function Services() {
   
@@ -92,9 +93,9 @@ function Services() {
 
                         {/* Learn More */}
                         <button className="mt-8 text-[#F37920] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all duration-300">
-                            <a href="/services" className="hover:text-[#FFFFFF]">
+                            <Link to="/services" className="hover:text-[#FFFFFF]">
                                 Learn More →
-                            </a>
+                            </Link>
                         </button>
 
                     </div>

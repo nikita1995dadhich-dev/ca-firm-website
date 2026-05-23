@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { dataInfo } from "../constants/data"
 import  profile  from "../assets/profile.jpeg"
+import { Link } from "react-router-dom"
 
 function About() {
 
@@ -55,7 +56,7 @@ function About() {
             </h2>
   
             {/* Description */}
-            <p className="mt-10 text-xl text-justify text-[#4B5563] leading-5">
+            <p className="mt-10 text-xl text-justify text-[#4B5563] leading-9">
   
               <span className="text-[#F37920] semibold text-2xl"> {dataInfo.subNameF} </span> is a professionally managed Chartered Accountancy firm established with the objective of providing comprehensive financial, taxation, compliance, and advisory services under one roof.<br>
               </br>
@@ -82,7 +83,6 @@ function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="h-full"
           >
 
             <img
@@ -113,7 +113,7 @@ function About() {
 
             </h2>
 
-            <p className="mt-10 text-xl text-justify text-[#4B5563] leading-5">
+            <p className="mt-10 text-xl text-justify text-[#4B5563] leading-9">
 
               <span className="text-[#F37920] semibold text-2xl"> {dataInfo.founderName} </span>is the Founder and Proprietor of <span className="text-[#F37920] ">{dataInfo.firmName}</span>. He is a qualified <span className="text-[#F37920] ">{dataInfo.subNameF}</span> who completed his Chartered Accountancy qualification in September 2025.
               <br></br><br></br>
@@ -215,9 +215,9 @@ function About() {
           </p>
 
           <button className=" border border-[#55B848] mt-12 bg-[#E5E7EB] text-[#1E6A9C]  hover:bg-[#E58B2A] px-10 py-5 rounded-2xl font-semibold shadow-xl hover:scale-105 transition duration-300">
-            <a href="/contact">
+            <Link to="/contact">
               Contact Us
-            </a>
+            </Link>
           </button>
 
         </div>

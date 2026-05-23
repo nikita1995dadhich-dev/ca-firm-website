@@ -96,7 +96,7 @@ function Navbar() {
                         </ul>
 
                         {/* Button */}
-                        <a href="/contact">
+                        <Link to="/contact">
                             <button className="flex items-center gap-3 bg-[#F37920]  hover:scale-105 text-white px-7 py-4 rounded-2xl shadow-xl transition duration-300">
                                 {/*bg-gradient-to-r from-blue-700 to-cyan-500*/}
                                     <FaPhoneAlt />
@@ -104,7 +104,7 @@ function Navbar() {
                                     Get Consultation
                                 
                             </button>
-                        </a>
+                        </Link>
 
                     </div>
 
@@ -159,7 +159,7 @@ function Navbar() {
                     </ul>
             
                     {/* Mobile Button */}
-                     <a href="/contact" onClick={() => setMenuOpen(false)}>
+                     <Link to="/contact" onClick={() => setMenuOpen(false)}>
                         <button className="mt-8 w-full flex items-center justify-center gap-3 bg-[#F37920] hover:scale-105  text-white px-7 py-4 rounded-2xl shadow-xl">
                             {/*bg-gradient-to-r from-blue-700 to-cyan-500*/}
                                 <FaPhoneAlt />
@@ -167,7 +167,7 @@ function Navbar() {
                             Get Consultation
 
                         </button>
-                    </a>
+                    </Link>
 
                 </div>
 

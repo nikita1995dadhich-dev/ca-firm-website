@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 function CTA() {
     return (
@@ -26,9 +27,9 @@ function CTA() {
                     </p>
 
                     <button className="border border-[#55B848] mt-10 bg-[#E5E7EB] text-[#1E6A9C]  hover:bg-[#E58B2A] px-10 py-5 rounded-2xl font-semibold shadow-xl transition duration-300">
-                        <a href="/contact">
+                        <Link to="/contact">
                             Contact Us
-                        </a>
+                        </Link>
                     </button>
 
                 </motion.div>
