@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "jaisansariyaassociates.in"
+        }
+      ],
+      "destination": "https://www.jaisansariyaassociates.com/$1",
+      "permanent": true
+    }
+  ]
+}
