@@ -15,59 +15,59 @@ function Navbar() {
 
         <nav className="fixed top-0 left-0 w-full z-50 bg-[#FFFFFF] backdrop-blur-lg border-b border-gray-200 shadow-sm"> 
 
-            <div className="w-full px-2 md:px-4 lg:px-8 py-4 flex items-center justify-between">
+            <div className="w-full px-2 md:px-4 lg:px-8 py-4 pb-0 flex items-stretch justify-between">
 
                 {/* logo Section */}
-                <div className="flex items-center gap-3">
+                    <div className="flex items-stretch gap-1 md:gap-3 pb-0">
 
-                    {/* Logo */}
-                    <div>
-                        <Link to="/" onClick={() => setMenuOpen(false)}>
-                            <img
-                                src={logo}
-                                alt="logo"
-                                className="w-16 h-16 md:w-16 md:h-16"
-                            />
-                        </Link>
-                    </div>  
+                        {/* Logo */}
+                        <div className="shrink-0">
+                            <Link to="/" onClick={() => setMenuOpen(false)} >
+                                <img
+                                    src={logo}
+                                    alt="logo"
+                                    className="w-10 h-10 md:w-17 md:h-17 "
+                                />
+                            </Link> 
+                        </div>  
                     
 
 
-                    {/* Text */}
-                    <div>
-                        <Link to="/" onClick={() => setMenuOpen(false)}>
-                            <h1 className="text-2xl md:text-4xl font-bold text-[#145886] leading-9">
+                        {/* Text */}
+                        <div>
+                            <Link to="/" onClick={() => setMenuOpen(false)}>
+                                <h1 className="text-lg whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-5xl font-bold text-[#145886] md:leading-9">
 
-                                {dataInfo.firstNameF}
-                                <span className="text-[#F37920] ">
-                                    {" "} & </span>
-                                {dataInfo.lastNameF}
+                                    {dataInfo.firstNameF}
+                                    <span className="text-[#F37920] ">
+                                        {" "} & </span>
+                                    {dataInfo.lastNameF}
 
-                            </h1>
-                        </Link>
+                                </h1>
+                            </Link>
 
-                        <div className=" md:flex items-center gap-3 mt-0">
+                            <div className=" flex items-center gap-3   py-2 whitespace-nowrap">
 
-                            <div className="hidden md:flex w-40 h-[1px] bg-[#F37920]"></div>
+                                <div className=" flex-1 h-[2px] bg-[#F37920]"></div>
 
-                            <p className="text-gray-600  md:text-xl lg:text-2xl  text-[#145886]">
+                                <p className="text-sm md:text-2xl lg:text-2xl  text-[#145886] text-center  shrink-0">
 
-                                {dataInfo.subNameF}
+                                    {dataInfo.subNameF}
 
-                            </p>
+                                </p>
 
-                            <div className="hidden md:flex w-33 h-[1px] bg-[#F37920]"></div>
+                                <div className="flex-1   h-[2px] bg-[#F37920]"></div>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
-
                     {/* DESKTOP MENU */}
-                    <div className="hidden lg:flex items-center gap-10">
+                    <div className="hidden lg:flex items-center gap-10 py-4 ">
 
-                        <ul className="flex items-center gap-10 text-[#1F2937] font-medium text-lg">
+                        <ul className="flex items-center gap-10 text-[#1F2937] font-medium text-lg py-3 ">
 
                             <li className={`${ location.pathname === "/" ? "text-[#F37920] hover:text-[#F37920]  cursor-pointer transition duration-300" : "hover:text-[#F37920]  cursor-pointer transition duration-300 text-[#145886]" } `}>
                                 <Link to="/" className="text-2xl" >
@@ -109,14 +109,16 @@ function Navbar() {
                     </div>
 
                     {/* MOBILE MENU BUTTON */}
-                    <button
-                        className="lg:hidden text-4xl text-[#1F2937]"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                    >
+                    <div className="lg:hidden mt-0 h-10 md:h-22 md:w-20  flex  items-start justify-center ">
+                        <button
+                            className="text-5xl md:text-6xl  text-[#1F2937]  shrink-0"
+                            onClick={() => setMenuOpen(!menuOpen)}
+                        >
 
-                        {menuOpen ? <HiX /> : <HiMenuAlt3 />}
+                            {menuOpen ? <HiX /> : <HiMenuAlt3 />}
 
-                    </button>
+                        </button>
+                    </div>
                     
                  
             </div>

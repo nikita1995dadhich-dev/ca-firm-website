@@ -24,17 +24,17 @@ function WhyChooseUs() {
     {
       icon: "💰",
       title: "Experienced Financial Advisory",
-      desc: "Helping businesses scale with smart strategies."
+      desc: "Strategic financial guidance backed by industry knowledge and practical expertise."
     },
     {
       icon: "💻",
       title: "Technology Driven Solutions",
-      desc: "Helping businesses scale with smart strategies."
+      desc: "Modern tools and digital processes for efficient and accurate financial services."
     },
     {
       icon: "🔍",
       title: "Transparent Communication",
-      desc: "Helping businesses scale with smart strategies."
+      desc: "Clear, honest, and timely communication to keep clients informed at every step."
     }
   ]
 

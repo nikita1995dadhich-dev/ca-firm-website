@@ -54,7 +54,7 @@ function Contact() {
 
                     {/* Left form */}
                     <div className="bg-[#FFFFFF] p-10 rounded-3xl shadow-sm border border-[#55B848]">
-                        <h2 className="text-4xl font-bold text-[#145886]">
+                        <h2 className="text-4xl font-medium text-[#145886]">
                             Send Us a Message
                         </h2>
                         <p className="mt-4 text-[#4B5563]">
@@ -131,24 +131,26 @@ function Contact() {
 
                     {/* Right Info Card */}
                     <div className="bg-white p-10 rounded-3xl shadow-sm border border-[#55B848] overflow-hidden">
-                        <h2 className="text-lg md:text-4xl font-bold text-[#145886] leading-tight whitespace-nowrap">
-                           {dataInfo.firstNameF}
-                            <span className="text-[#F37920]">
-                                {" "} & </span>
-                            {dataInfo.lastNameF}
-                        </h2>
-                        <div className=" md:flex items-center gap-5 mt-1">
+                        <div className="items-stretch">
+                            <h2 className="text-xl md:text-4xl font-medium text-[#145886] leading-tight whitespace-nowrap  ">
+                                {dataInfo.firstNameF}
+                                <span className="text-[#F37920]">
+                                    {" "} & </span>
+                                {dataInfo.lastNameF}
+                            </h2> 
+                            <div className="flex items-center gap-1 md:gap-3 whitespace-nowrap mt-1 ">
 
-                            <div className="hidden md:flex w-50 h-[1px] bg-[#F37920]"></div>
+                                <div className="flex-1 h-[1px] bg-[#F37920]"></div>
 
-                            <p className="text-xl w-50 text-[#145886] whitespace-nowrap">
+                                <p className="text-sm md:text-xl text-[#145886] text-center shrink-0 ">
 
-                                {dataInfo.subNameF}
+                                    {dataInfo.subNameF}
 
-                            </p>
+                                </p>
 
-                            <div className="hidden md:flex w-35 h-[1px] bg-[#F37920]"></div>
+                                <div className="flex-1 h-[1px] bg-[#F37920]"></div>
 
+                            </div>
                         </div>
                         <div className="grid md:grid-col-2 gap-10 mt-12">
                             {/* Main Office */}

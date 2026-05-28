@@ -5,10 +5,10 @@ import { Link } from "react-router-dom"
 function AboutSection() {
     return (
     
-        <section className="relative py-32 overflow-hidden bg-gradient-to-b from-[#145886]  to-[#1E6A9C]">
+        <section className="relative py-25 md:py-32  bg-gradient-to-b from-[#145886]  to-[#1E6A9C]">
     
           {/* Main Container */}
-          <div className="relative z-10 max-w-7xl mx-auto px-6 grid  gap-20 items-center ">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1  gap-10 items-start w-full">
 
             {/*  CONTENT */}
             <motion.div
@@ -27,7 +27,7 @@ function AboutSection() {
     
               {/* Main Heading */}
               
-              <h2 className="mt-8 text-6xl font-bold text-[#FFFFFF] leading-tight">
+              <h2 className="mt-8 whitespace-nowrap overflow-hidden text-2xl md:text-6xl font-bold text-[#FFFFFF] leading-tight">
     
                 {dataInfo.firstNameF} <span className="text-[#F37920]">
                 {" "} & </span> {dataInfo.lastNameF} 
@@ -35,11 +35,14 @@ function AboutSection() {
               </h2>
     
               {/* Description */}
-              <p className="mt-10 text-xl text-[#E5E7EB] leading-9 text-justify">
-    
-                At <span className="text-[#F37920] bold text-2xl">{dataInfo.firmName}, {dataInfo.subNameF},</span> we are committed to providing professional, ethical, and value-driven financial and compliance solutions to businesses, startups, professionals, and individuals. With a client-focused approach and practical industry experience, we assist our clients in navigating today’s dynamic regulatory and financial environment with confidence and clarity.
-                Our firm offers a wide range of services including Income Tax, GST, Audit & Assurance, TDS Compliance, ROC Filings, Financial Advisory, and Fund-Raising Services including IPO-related support. We believe in delivering timely, transparent, and reliable professional services while maintaining the highest standards of integrity and professionalism.
-              </p>
+              <div className="w-full min-w-0">
+                
+                <p className="mt-8 md:mt-10 text-m md:text-xl text-[#E5E7EB] leading-7 text-justify break-words w-full max-w-full ">
+      
+                  At <span className="text-[#F37920] bold text-xl md:text-3xl">{dataInfo.firmName}, {dataInfo.subNameF},</span> we are committed to providing professional, ethical, and value-driven financial and compliance solutions to businesses, startups, professionals, and individuals. With a client-focused approach and practical industry experience, we assist our clients in navigating today’s dynamic regulatory and financial environment with confidence and clarity.
+                  Our firm offers a wide range of services including Income Tax, GST, Audit & Assurance, TDS Compliance, ROC Filings, Financial Advisory, and Fund-Raising Services including IPO-related support. We believe in delivering timely, transparent, and reliable professional services while maintaining the highest standards of integrity and professionalism.
+                </p>
+              </div>
 
               {/* Buttons */}
               <div className="flex gap-6 mt-14">

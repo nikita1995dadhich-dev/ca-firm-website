@@ -41,8 +41,9 @@ function Services() {
                 {/* Description */}
                 <p className="mt-8 max-w-3xl mx-auto text-xl text-[#4B5563] leading-9">
 
-                    We provide complete taxation, accounting,
-                    audit and business advisory solutions with
+                    We provide complete Taxation, Accounting, 
+                    Audit & Assurance, ROC Compliances and 
+                    Business Advisory solutions with 
                     professionalism and transparency.
 
                 </p>

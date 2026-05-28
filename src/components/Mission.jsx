@@ -5,15 +5,31 @@ function Mission() {
 
   const data = [
     
-      " To deliver accurate, timely, and practical financial and compliance solutions.",
+      //" To deliver accurate, timely, and practical financial and compliance solutions.",
+      
+      //" To maintain the highest standards of professional ethics and integrity.",
     
-      " To maintain the highest standards of professional ethics and integrity.",
+      //" To assist businesses in achieving sustainable growth through strategic financial guidance.",
     
-      " To assist businesses in achieving sustainable growth through strategic financial guidance.",
+      //" To build long-term relationships by understanding client needs and providing personalized services.", 
     
-      " To build long-term relationships by understanding client needs and providing personalized services.", 
-    
-      " To continuously upgrade knowledge and adapt to changing laws, regulations, and business environments."
+      //" To continuously upgrade knowledge and adapt to changing laws, regulations, and business environments.",
+
+      //" To provide reliable and result-oriented professional services with complete transparency.",
+
+      //" To uphold ethical practices while ensuring trust, accountability, and client satisfaction.",
+
+      //" To deliver dependable financial guidance that supports informed and confident business decisions."
+
+      "To provide reliable, ethical, and quality financial and compliance services that help clients grow with confidence.",
+
+      "To deliver timely and practical taxation, accounting, and business advisory solutions tailored to client needs.",
+
+      "To build long-term relationships through transparency, professionalism, and commitment to client success.",
+
+      "To simplify complex financial and regulatory matters with clear guidance and innovative solutions.",
+
+      "To uphold the highest standards of integrity, accuracy, and excellence in every professional service we provide."
     
 ]
 
@@ -27,15 +43,16 @@ function Mission() {
         {/* Heading */}
         <div className="text-center">
 
-          <div className="inline-block px-6 py-2 rounded-full border border-[#55B848] bg-[#EEF7FC] text-[#4B5563] uppercase tracking-[3px] text-sm font-medium">
+          <div className="inline-block px-6 py-2 rounded-full border border-[#55B848] bg-[#EEF7FC] text-[#4B5563] z tracking-[3px] text-sm font-medium">
 
             Mission
 
           </div>
 
-          <h2 className="mt-8 text-6xl font-bold text-[#145886]">
+          <h2 className="mt-4 text-7xl font-bold text-[#145886]">
 
-            Reliable Professional Ethical
+            Mission
+           {/* Reliable Professional Ethical */}
 
           </h2>
 
