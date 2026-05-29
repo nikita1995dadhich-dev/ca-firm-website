@@ -132,7 +132,7 @@ function Contact() {
                     {/* Right Info Card */}
                     <div className="bg-white p-10 rounded-3xl shadow-sm border border-[#55B848] overflow-hidden">
                         <div className="items-stretch">
-                            <h2 className="text-xl md:text-4xl font-medium text-[#145886] leading-tight whitespace-nowrap  ">
+                            <h2 className="text-base md:text-4xl font-medium text-[#145886] leading-tight whitespace-nowrap  ">
                                 {dataInfo.firstNameF}
                                 <span className="text-[#F37920]">
                                     {" "} & </span>
@@ -156,23 +156,23 @@ function Contact() {
                             {/* Main Office */}
                             <div>
                                 <div className="flex items-center gap-4">
-                                    <div className=" text-red-700 w-7 rounded-full flex items-center jusztify-center text-2xl">
+                                    <div className=" text-red-700 w-7 rounded-full flex items-center justify-center text-lg md:text-2xl">
                                         <FaMapMarkerAlt />
                                     </div>
-                                    <h3 className="text-2xl font-semibold text-[#1F2937]">
+                                    <h3 className="text-lg md:text-2xl font-semibold text-[#1F2937]">
                                         Office Address 
                                     </h3>
                                 </div>
-                                <p className="mt-6 text-[#4B5563] text-lg flex gap-3">
-                                    <FaMapPin  className="mt-2 text-red-700" /> 
+                                <p className="mt-6 text-[#4B5563] text-base md:text-lg flex gap-3">
+                                    <FaMapPin  className="mt-1 text-3xl  md:text-xl text-red-700" /> 
                                     {dataInfo.address}
                                 </p>
-                                <p className="mt-4 text-[#4B5563] text-lg flex gap-3">
+                                <p className="mt-4 text-[#4B5563]  text-base md:text-lg flex gap-3">
                                     <FaPhoneAlt className="mt-1 text-blue-700" />
                                     {dataInfo.phoneNo}
                                 </p>
-                                <p className="mt-4 text-[#4B5563] text-lg flex gap-3">
-                                    <FaEnvelope className="mt-2 text-black-700" />
+                                <p className="mt-4 text-[#4B5563] text-base md:text-lg flex gap-3">
+                                    <FaEnvelope className="mt-1 text-black-700" />
                                      {dataInfo.emailAddress}
                                 </p>
                             </div>
@@ -180,10 +180,10 @@ function Contact() {
                             {/* Social Links */}
                             <div>
                                 <div className="flex items-center gap-4">
-                                    <div className=" text-blue-700 w-7 h-14 rounded-full flex items-center justify-center text-2xl">
+                                    <div className=" text-blue-700 w-7 h-14 rounded-full flex items-center justify-center text-lg md:text-2xl">
                                         🔗
                                     </div>
-                                    <h3 className="text-2xl font-semibold text-[#1F2937]">
+                                    <h3 className="text-lg md:text-2xl font-semibold text-[#1F2937]">
                                         Follow Us
                                     </h3>
                                 </div>

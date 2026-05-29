@@ -12,11 +12,11 @@ function Footer() {
 
                 {/* Cpmpany Info */}
                 <div>
-                    <h2 className="text-2xl font-bold text-[#FFFFFF] whitespace-nowrap">
+                    <h2 className="text-xl md:text-2xl font-bold text-[#FFFFFF] whitespace-nowrap">
                         {dataInfo.firmName}
                     </h2>
                     
-                    <p className="mt-4 text-[#CBD5E1] leading-7">
+                    <p className="mt-4 text-[#CBD5E1] leading-7 text-sm md:text-base">
                         Professional taxation, audit and accounting services
                         for businesses and individuals.
                     </p>
@@ -28,7 +28,7 @@ function Footer() {
                         Quick Links
                     </h2>
                     
-                    <ul className="mt-4 space-y-3 text-[#CBD5E1]">
+                    <ul className="text-sm md:text-base mt-4 space-y-3 text-[#CBD5E1]">
                         <li>
                             <Link to="/" className="hover:text-[#F37920]">
                                 Home
@@ -58,7 +58,7 @@ function Footer() {
                         Contact Us
                     </h3>
                     
-                    <ul className="mt-4 space-y-3 text-[#CBD5E1]">
+                    <ul className="text-sm md:text-base mt-4 space-y-3 text-[#CBD5E1]">
                         <li className="flex gap-3">
                             <div className="mt-2 text-pink-500">
                                 <FaMapPin  />
@@ -88,7 +88,7 @@ function Footer() {
             </div>
 
             {/* Bottom Line */}
-            <div className="border-t border-gray-700 mt-10 pt-6 text-center text-[#CBD5E1] stext-sm">
+            <div className="text-sm md:text-base border-t border-gray-700 mt-10 pt-6 text-center text-[#CBD5E1]">
                 Copyright © 2026 | Powered by JAISANSARIYA & ASSOCIATES | All Rights Reserved. 
             </div>
             

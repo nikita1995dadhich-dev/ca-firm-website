@@ -14,7 +14,7 @@ function CTA() {
                 viewport={{ once: true }}
                 className="mt-24 bg-gradient-to-b from-[#145886]  to-[#1E6A9C]  rounded-[40px] p-16 text-center shadow-2xl"
                 >
-                    <h2 className="text-5xl font-bold text-[#FFFFFF]">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#FFFFFF]">
 
                         Need Professional Financial Help?
 

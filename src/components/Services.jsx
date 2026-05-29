@@ -31,7 +31,7 @@ function Services() {
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="mt-8 text-6xl font-bold text-[#145886]">
+                <h2 className="mt-8 text-5xl md:text-6xl font-bold text-[#145886]">
 
                     Professional Services
                     For Your Business

@@ -219,7 +219,7 @@ function About() {
 
         <div className="bg-gradient-to-b from-[#145886]  to-[#1E6A9C] rounded-[40px] p-20 text-center shadow-2xl">
 
-          <h2 className="text-6xl font-bold text-[#FFFFFF]">
+          <h2 className="text-5xl md:text-6xl font-bold text-[#FFFFFF]">
 
             Let’s Build Your
             Financial Future Together
