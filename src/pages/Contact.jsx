@@ -156,22 +156,22 @@ function Contact() {
                             {/* Main Office */}
                             <div>
                                 <div className="flex items-center gap-4">
-                                    <div className=" text-red-700 w-7 rounded-full flex items-center justify-center text-lg md:text-2xl">
+                                    <div className=" text-red-700 w-7 rounded-full flex items-center justify-center text-base md:text-2xl">
                                         <FaMapMarkerAlt />
                                     </div>
-                                    <h3 className="text-lg md:text-2xl font-semibold text-[#1F2937]">
+                                    <h3 className="text-base md:text-2xl font-semibold text-[#1F2937]">
                                         Office Address 
                                     </h3>
                                 </div>
-                                <p className="mt-6 text-[#4B5563] text-base md:text-lg flex gap-3">
-                                    <FaMapPin  className="mt-1 text-3xl  md:text-xl text-red-700" /> 
+                                <p className="mt-6 text-[#4B5563] text-sm md:text-lg flex gap-3">
+                                    <FaMapPin  className="mt-1 text-2xl  md:text-xl text-red-700" /> 
                                     {dataInfo.address}
                                 </p>
-                                <p className="mt-4 text-[#4B5563]  text-base md:text-lg flex gap-3">
+                                <p className="mt-4 text-[#4B5563]  text-sm md:text-lg flex gap-3">
                                     <FaPhoneAlt className="mt-1 text-blue-700" />
                                     {dataInfo.phoneNo}
                                 </p>
-                                <p className="mt-4 text-[#4B5563] text-base md:text-lg flex gap-3">
+                                <p className="mt-4 text-[#4B5563] text-sm md:text-lg flex gap-3">
                                     <FaEnvelope className="mt-1 text-black-700" />
                                      {dataInfo.emailAddress}
                                 </p>
@@ -183,20 +183,20 @@ function Contact() {
                                     <div className=" text-blue-700 w-7 h-14 rounded-full flex items-center justify-center text-lg md:text-2xl">
                                         🔗
                                     </div>
-                                    <h3 className="text-lg md:text-2xl font-semibold text-[#1F2937]">
+                                    <h3 className="text-base md:text-2xl font-semibold text-[#1F2937]">
                                         Follow Us
                                     </h3>
                                 </div>
-                                <div className="flex gap-4 mt-8">
+                                <div className="flex gap-4 mt-2 md:mt-8">
                                     
                                     <a href={dataInfo.facebookLink} className="bg-white-200 text-blue-500" target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook size={30} />
+                                        <FaFacebook  className="text-2xl md:text-3xl" />
                                     </a>
                                     <a href={dataInfo.instagramLink} className="bg-white-200 text-pink-700" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram size={30} />
+                                        <FaInstagram  className="text-2xl md:text-3xl" />
                                     </a>
                                     <a href={dataInfo.inkedinLink} className="bg-white-200 text-blue-500" target="_blank" rel="noopener noreferrer">
-                                        <FaLinkedin size={30} />
+                                        <FaLinkedin  className="text-2xl md:text-3xl" />
                                     </a>
                                 </div>
                             </div>

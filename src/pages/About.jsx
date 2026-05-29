@@ -49,7 +49,7 @@ function About() {
             </div>
   
             {/* Main Heading */}
-            <h2 className="mt-8 whitespace-nowrap overflow-hidden text-2xl md:text-6xl font-bold text-[#145886] leading-tight">
+            <h2 className="mt-8 whitespace-nowrap overflow-hidden text-xl md:text-6xl font-bold text-[#145886] leading-tight">
   
               {dataInfo.firstNameF} <span className="text-[#F37920]">
               {" "} & </span> {dataInfo.lastNameF} 
