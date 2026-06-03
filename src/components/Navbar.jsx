@@ -36,7 +36,7 @@ function Navbar() {
                         {/* Text */}
                         <div>
                             <Link to="/" onClick={() => setMenuOpen(false)}>
-                                <h1 className="px-1 text-lg whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-5xl font-bold text-[#145886] md:leading-9">
+                                <h1 className="py-0.5 md:py-0 text-lg whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-5xl font-bold text-[#145886] md:leading-9">
 
                                     {dataInfo.firstNameF}
                                     <span className="text-[#F37920] ">
@@ -46,7 +46,7 @@ function Navbar() {
                                 </h1>
                             </Link>
 
-                            <div className="px-1 flex items-center gap-3   py-0 whitespace-nowrap">
+                            <div className="flex items-center gap-3 py-0 md:py-0.5 whitespace-nowrap">
 
                                 <div className=" flex-1 h-[2px] bg-[#F37920]"></div>
 
@@ -111,7 +111,7 @@ function Navbar() {
                     {/* MOBILE MENU BUTTON */}
                     <div className="lg:hidden mt-0 h-10 md:h-22 md:w-20  flex  items-start justify-center ">
                         <button
-                            className="text-5xl md:text-6xl  text-[#1F2937]  shrink-0"
+                            className="text-3xl md:text-6xl  text-[#1F2937]  shrink-0"
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
 
