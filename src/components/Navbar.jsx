@@ -36,7 +36,7 @@ function Navbar() {
                         {/* Text */}
                         <div>
                             <Link to="/" onClick={() => setMenuOpen(false)}>
-                                <h1 className="text-lg whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-5xl font-bold text-[#145886] md:leading-9">
+                                <h1 className="px-1 text-lg whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-5xl font-bold text-[#145886] md:leading-9">
 
                                     {dataInfo.firstNameF}
                                     <span className="text-[#F37920] ">
@@ -46,7 +46,7 @@ function Navbar() {
                                 </h1>
                             </Link>
 
-                            <div className=" flex items-center gap-3   py-0 whitespace-nowrap">
+                            <div className="px-1 flex items-center gap-3   py-0 whitespace-nowrap">
 
                                 <div className=" flex-1 h-[2px] bg-[#F37920]"></div>
 
