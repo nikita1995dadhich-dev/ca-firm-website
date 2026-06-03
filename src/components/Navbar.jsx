@@ -26,7 +26,7 @@ function Navbar() {
                                 <img
                                     src={logo}
                                     alt="logo"
-                                    className="w-10 h-10 md:w-17 md:h-17 "
+                                    className="w-10 h-8 md:w-17 md:h-15 "
                                 />
                             </Link> 
                         </div>  
@@ -46,7 +46,7 @@ function Navbar() {
                                 </h1>
                             </Link>
 
-                            <div className=" flex items-center gap-3   py-2 whitespace-nowrap">
+                            <div className=" flex items-center gap-3   py-0 whitespace-nowrap">
 
                                 <div className=" flex-1 h-[2px] bg-[#F37920]"></div>
 
