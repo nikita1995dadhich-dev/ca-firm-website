@@ -17,8 +17,8 @@ function Footer() {
                     </h2>
                     
                     <p className="mt-4 text-[#CBD5E1] leading-7 text-sm md:text-base">
-                        Professional taxation, audit and accounting services
-                        for businesses and individuals.
+                        Professional Taxation, Accounting, Audit & Assurance, 
+                        ROC Compliances and Business Advisory Solutions to Businesses and Individuals.
                     </p>
                 </div>
 
