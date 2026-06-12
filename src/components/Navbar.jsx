@@ -6,10 +6,12 @@ import  logo  from "../assets/caIndiaLogo.png"
 import { colors } from "../constants/colors"
 import { color } from "framer-motion"
 import { dataInfo } from "../constants/data"
+import ConsultationModal from "./ConsultationModal";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
     const location = useLocation()
+    const [showConsultation, setShowConsultation] = useState(false);
 
     return (
 
@@ -26,7 +28,7 @@ function Navbar() {
                                 <img
                                     src={logo}
                                     alt="logo"
-                                    className="w-10 h-8 md:w-17 md:h-15 "
+                                    className="h-10 md:h-15 w-auto"
                                 />
                             </Link> 
                         </div>  
@@ -36,7 +38,7 @@ function Navbar() {
                         {/* Text */}
                         <div>
                             <Link to="/" onClick={() => setMenuOpen(false)}>
-                                <h1 className="py-0.5 md:py-0 text-lg whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-5xl font-bold text-[#145886] md:leading-9">
+                                <h1 className="py-0.5 md:py-0 text-base whitespace-nowrap overflow-hidden text-ellipsis leading-4 md:text-4xl font-bold text-[#145886] md:leading-9">
 
                                     {dataInfo.firstNameF}
                                     <span className="text-[#F37920] ">
@@ -46,11 +48,11 @@ function Navbar() {
                                 </h1>
                             </Link>
 
-                            <div className="flex items-center gap-3 py-0 md:py-0.5 whitespace-nowrap">
+                            <div className="flex items-center gap-3 py-0  whitespace-nowrap">
 
                                 <div className=" flex-1 h-[2px] bg-[#F37920]"></div>
 
-                                <p className="text-sm md:text-2xl lg:text-2xl  text-[#145886] text-center  shrink-0">
+                                <p className="text-sm md:text-xl lg:text-2xl  text-[#145886] text-center  shrink-0">
 
                                     {dataInfo.subNameF}
 
@@ -96,22 +98,25 @@ function Navbar() {
                         </ul>
 
                         {/* Button */}
-                        <Link to="/contact">
-                            <button className="flex items-center gap-3 bg-[#F37920]  hover:scale-105 text-white px-7 py-4 rounded-2xl shadow-xl transition duration-300">
+
+                            <button 
+                                className="flex items-center gap-3 bg-[#F37920]  hover:scale-105 text-white px-7 py-4 rounded-2xl shadow-xl transition duration-300"
+                                onClick={() => setShowConsultation(true)}
+                            >
                                 {/*bg-gradient-to-r from-blue-700 to-cyan-500*/}
                                     <FaPhoneAlt />
 
                                     Get Consultation
                                 
                             </button>
-                        </Link>
+                            
 
                     </div>
 
                     {/* MOBILE MENU BUTTON */}
                     <div className="lg:hidden mt-0 h-10 md:h-22 md:w-20  flex  items-start justify-center ">
                         <button
-                            className="text-3xl md:text-6xl  text-[#1F2937]  shrink-0"
+                            className="text-5xl md:text-7xl  text-[#1F2937]  shrink-0"
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
 
@@ -161,8 +166,12 @@ function Navbar() {
                     </ul>
             
                     {/* Mobile Button */}
-                     <Link to="/contact" onClick={() => setMenuOpen(false)}>
-                        <button className="mt-8 w-full flex items-center justify-center gap-3 bg-[#F37920] hover:scale-105  text-white px-7 py-4 rounded-2xl shadow-xl">
+                     <Link  onClick={() => setMenuOpen(false)}>
+                        <button 
+                            className="mt-8 w-full flex items-center justify-center gap-3 bg-[#F37920] hover:scale-105  text-white px-7 py-4 rounded-2xl shadow-xl"
+                            onClick={() => setShowConsultation(true)}
+                            >
+
                             {/*bg-gradient-to-r from-blue-700 to-cyan-500*/}
                                 <FaPhoneAlt />
                             
@@ -174,8 +183,12 @@ function Navbar() {
                 </div>
 
             </div> 
-
+                <ConsultationModal
+                    isOpen={showConsultation}
+                    onClose={() => setShowConsultation(false)}
+                />
         </nav>
+        
 
     )
 }

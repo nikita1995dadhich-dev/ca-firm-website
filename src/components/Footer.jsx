@@ -13,7 +13,10 @@ function Footer() {
                 {/* Cpmpany Info */}
                 <div>
                     <h2 className="text-xl md:text-2xl font-bold text-[#FFFFFF] whitespace-nowrap">
-                        {dataInfo.firmName}
+                        {dataInfo.firstNameF}
+                        <span className="text-[#F37920] ">
+                            {" "} & </span>
+                        {dataInfo.lastNameF}
                     </h2>
                     
                     <p className="mt-4 text-[#CBD5E1] leading-7 text-sm md:text-base">

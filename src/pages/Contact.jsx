@@ -19,7 +19,7 @@ function Contact() {
             ContactUsTemplateInfo.YOUR_PUBLIC_KEY
         )
         .then(() => {
-          alert("Message Sent Successfully")
+          alert("Thank you for connectiing with JAISANSARIYA & ASSOCIATES.")
           form.current.reset()
         })
         .catch(() => {
@@ -69,6 +69,7 @@ function Contact() {
                                     name="name"
                                     placeholder="Your Name"                                       
                                     className="w-full placeholder:text-[#9CA3AF] border  border-gray-300 rounded-xl px-5 py-4 outline-none focus:border-blue-700"
+                                    required
                                     />
                             </div>
 
@@ -79,6 +80,7 @@ function Contact() {
                                     name="email"
                                     placeholder="Your Email"
                                     className="w-full placeholder:text-[#9CA3AF] border border-gray-300 rounded-xl px-5 py-4 outline-none focus:border-blue-700"
+                                    required
                                     />
                             </div>
                             {/* phone */}
@@ -88,6 +90,7 @@ function Contact() {
                                     name="phone"
                                     placeholder="Your phone"
                                     className="w-full placeholder:text-[#9CA3AF] border border-gray-300 rounded-xl px-5 py-4 outline-none focus:border-blue-700"
+                                    required
                                     />
                             </div>
 
@@ -96,6 +99,7 @@ function Contact() {
                                 <select
                                     name="title"
                                     className="w-full  text-[#9CA3AF] border border-gray-300 rounded-xl px-5 py-4 outline-none focus:border-blue-700"
+                                    required
                                 >
 
                                     <option value="" className="text-[#9CA3AF]">
@@ -118,6 +122,7 @@ function Contact() {
                                         placeholder="Your Message"
                                         rows="6"
                                         className="w-full placeholder:text-[#9CA3AF] border border-gray-300 rounded-xl px-5 py-4 outline-none focus:border-blue-700"
+                                        required
                                         >
                                     </textarea>
                             </div>

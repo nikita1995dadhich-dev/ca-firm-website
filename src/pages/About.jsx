@@ -90,7 +90,7 @@ function About() {
         
         
 
-        <div className="flex flex-col lg:flex-row items-stretch gap-8 w-full">
+        <div className="flex flex-col lg:flex-row items-stretch gap-6 w-full">
 
             {/* LEFT IMAGE */}
             <motion.div
@@ -98,13 +98,13 @@ function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="lg:w-[35%] mt-8 flex items-center justify-center  overflow-hidden p-6"
+              className="lg:w-[45%]  mt-8  md:mt-10  flex items-center justify-center  overflow-hidden p-0"
             >
               
               <img
                 src={profile2}
                 alt="profile"
-                className=" w-48 h-48 object-cover object-[center_top] rounded-3xl  shadow-xl border border-[#55B848]"
+                className=" w-48 h-48  md:h-85  lg:w-full object-cover object-[center_top] rounded-3xl  shadow-xl border border-[#55B848]"
               />
 
             </motion.div>
@@ -119,32 +119,22 @@ function About() {
 
               
               <div className="flex-1 min-w-0 ">
-                <p className="mt-8 md:mt-16 text-m md:text-xl text-justify break-words text-[#4B5563] leading-7  items-start">
+                <p className="mt-8 md:mt-10  text-m md:text-xl text-justify break-words text-[#4B5563] leading-7  items-start">
 
                   <span className="text-[#F37920] semibold text-2xl"> {dataInfo.founderName} </span>is the Founder and Proprietor of <span className="text-[#F37920] ">{dataInfo.firmName}</span>. He is a qualified <span className="text-[#F37920] ">{dataInfo.subNameF}</span> who completed his Chartered Accountancy qualification in September 2025.
                   <br></br><br></br>
                   He holds a Bachelor of Commerce (B. Com) degree and possesses strong professional exposure in the areas of Income Tax, GST, Audit & Assurance, TDS Compliance, ROC Compliances, Financial Advisory, and Fund-Raising Services including IPO-related work.
-                  
+                  <br></br><br></br>
+                  With strong analytical skills, practical knowledge, and a commitment towards professional excellence, <span className="text-[#F37920]">{dataInfo.founderName} </span> aims to provide reliable, efficient, and value-driven financial solutions tailored to client requirements.
+                  <br></br><br></br>
+                  His vision is to establish a trusted professional practice known for integrity, quality service, and long-term client relationships.
+
                 </p>
               </div>
             
 
             </motion.div>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <p className="mt-8 text-m md:text-xl text-justify break-words text-[#4B5563] leading-7  items-start w-full">
-                  With strong analytical skills, practical knowledge, and a commitment towards professional excellence, <span className="text-[#F37920]">{dataInfo.founderName} </span> aims to provide reliable, efficient, and value-driven financial solutions tailored to client requirements.
-                <br></br><br></br>
-                His vision is to establish a trusted professional practice known for integrity, quality service, and long-term client relationships.
-
-            </p>
-
-          </motion.div>
 
 
           
