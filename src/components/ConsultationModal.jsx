@@ -75,7 +75,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full border p-3 rounded-xl placeholder:text-[#9CA3AF]"
+            className="w-full border border-[#55B848] p-3 rounded-xl placeholder:text-[#9CA3AF]"
           />
 
           <input
@@ -85,7 +85,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full border p-3 rounded-xl placeholder:text-[#9CA3AF]"
+            className="w-full border border-[#55B848] p-3 rounded-xl placeholder:text-[#9CA3AF]"
           />
 
           <input
@@ -95,7 +95,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             required
             value={formData.phone}
             onChange={handleChange}
-            className="w-full border p-3 rounded-xl placeholder:text-[#9CA3AF]"
+            className="w-full border border-[#55B848] p-3 rounded-xl placeholder:text-[#9CA3AF]"
           />
 
           <select
@@ -103,7 +103,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             value={formData.title}
             onChange={handleChange}
             required
-            className="w-full border p-3 rounded-xl text-[#9CA3AF]"
+            className="w-full border border-[#55B848] p-3 rounded-xl text-[#9CA3AF]"
           >
              <option value="" className="text-[#9CA3AF]">
                   Select Service
@@ -122,12 +122,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full border p-3 rounded-xl placeholder:text-[#9CA3AF]"
+            className="w-full border border-[#55B848] p-3 rounded-xl placeholder:text-[#9CA3AF]"
           />
 
           <button
             type="submit"
-            className="w-full bg-[#F37920] text-white py-4 rounded-xl hover:opacity-90"
+            className="w-full bg-[#F37920] hover:scale-105 text-white py-4 rounded-xl hover:opacity-90"
           >
             Submit Request
           </button>
