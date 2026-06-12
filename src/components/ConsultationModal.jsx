@@ -57,7 +57,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
         <button
           onClick={onClose}
-          className="absolute right-5 top-5 text-3xl"
+          className="absolute right-4 top-4 text-3xl"
         >
           <HiX />
         </button>
