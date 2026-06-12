@@ -67,7 +67,7 @@ function Navbar() {
                     </div>
 
                     {/* DESKTOP MENU */}
-                    <div className="hidden lg:flex items-center gap-10 py-4 ">
+                    <div className="hidden lg:flex items-center gap-10 py-2 ">
 
                         <ul className="flex items-center gap-10 text-[#1F2937] font-medium text-lg py-3 ">
 
@@ -109,14 +109,14 @@ function Navbar() {
                                     Get Consultation
                                 
                             </button>
-                            
+
 
                     </div>
 
                     {/* MOBILE MENU BUTTON */}
                     <div className="lg:hidden mt-0 h-10 md:h-22 md:w-20  flex  items-start justify-center ">
                         <button
-                            className="text-5xl md:text-7xl  text-[#1F2937]  shrink-0"
+                            className="text-4xl md:text-6xl  text-[#1F2937]  shrink-0"
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
 
