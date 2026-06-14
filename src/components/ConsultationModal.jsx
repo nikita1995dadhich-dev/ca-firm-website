@@ -31,7 +31,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         ContactUsTemplateInfo.YOUR_PUBLIC_KEY
       );
 
-      alert("Thank you for connectiing with JAISANSARIYA & ASSOCIATES.");
+      alert("Thank you for connecting with JAISANSARIYA & ASSOCIATES.");
 
       setFormData({
         name: "",

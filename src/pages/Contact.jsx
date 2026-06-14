@@ -19,7 +19,7 @@ function Contact() {
             ContactUsTemplateInfo.YOUR_PUBLIC_KEY
         )
         .then(() => {
-          alert("Thank you for connectiing with JAISANSARIYA & ASSOCIATES.")
+          alert("Thank you for connecting with JAISANSARIYA & ASSOCIATES.")
           form.current.reset()
         })
         .catch(() => {
